@@ -157,6 +157,12 @@ PRODUCT_PRIVATE_SEPOLICY_DIRS += \
     device/qcom/sepolicy/generic/product/private \
     device/qcom/sepolicy/qva/product/private
 
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    system/lib/libwfdcommonutils.so|libshim_wfdservice.so \
+    system/lib/libwfdmmsrc_system.so|libshim_wfdservice.so \
+    system/lib64/libwfdnative.so|libshim_wfdservice.so
+
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 

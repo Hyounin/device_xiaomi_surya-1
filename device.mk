@@ -178,7 +178,8 @@ PRODUCT_PACKAGES += \
 # WFD
 PRODUCT_PACKAGES += \
     libaacwrapper \
-    libnl
+    libnl \
+    libshim_wfdservice
 
 PRODUCT_BOOT_JARS += \
     WfdCommon

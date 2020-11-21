@@ -1,0 +1,4 @@
+cc_library_shared {
+    name: "libshim_wfdservice",
+    srcs: ["wfd/wfdservice_shim.cpp"],
+}
